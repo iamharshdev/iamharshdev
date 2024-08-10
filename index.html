@@ -23,7 +23,8 @@
         </div>
         <video
           autoplay
-          class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
+          muted
+          class="absolute main-video z-10 w-auto min-w-full min-h-full max-w-none"
         >
           <source
             src="https://github.com/user-attachments/assets/19b87973-4b3a-4853-b532-7e82d1d6b040"
@@ -32,5 +33,27 @@
           Your browser does not support the video tag.
         </video>
       </header>
+      <script>
+        // Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    // Get the video element
+    const video = document.querySelector('video');
+
+    // If there's no video element, exit the function
+    if (!video) {
+        console.error('No video element found');
+        return;
+    }
+
+    // Add click event listener to the entire document
+    document.addEventListener('click', function() {
+        // Toggle the muted attribute
+        video.muted = !video.muted;
+
+        // Optional: Log the current muted state
+        console.log('Video is now ' + (video.muted ? 'muted' : 'unmuted'));
+    });
+});
+      </script>
 </body>
 </html>
