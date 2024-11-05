@@ -18,7 +18,5 @@ Skills: You name it.
 
 <a href='https://archiveprogram.github.com/'><img src='https://raw.githubusercontent.com/acervenky/animated-github-badges/master/assets/acbadge.gif' width='40' height='40'></a> 
 
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=iamharsh.dev)
-
 ![GitHub streak stats](https://streak-stats.demolab.com/?user=iamharsh.dev)  
 
